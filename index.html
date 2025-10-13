@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Drop Game</title>
+    <title>Catch the Drops - Charity: Water</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="game-wrapper">
-        <h1 class="game-title">Water Drop</h1>
-        <p class="game-tagline">Catch the good drops, avoid the bad ones!</p>
+        <h1 class="game-title">Catch the Drops - Charity: Water</h1>
+        <p class="game-tagline">To Help collect clean water, catch as many drops as you can in 60 seconds!</p>
+
         <div class="score-panel">
             <div class="score">Score: <span id="score">0</span></div>
-            <div class="timer">Time: <span id="time">30</span>s</div>
-            <button id="start-btn">Start Game</button>
+            <div class="timer">Time: <span id="time">60</span>s</div>
+            <button id="start-btn">Start Game</button> 
         </div>
         
         <div id="game-container">
+          <div id="bucket">🪣</div>
         </div>
+
+        <button id="reset-btn" class="hidden">Play again</button>
     </div>
+
+    <audio id="ding-sound" src="https://cdn.pixabay.com/download/audio/2021/09/16/audio_d8b6f74b2f.mp3?filename=ding-36029.mp3"></audio>
+  <audio id="error-sound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_46a5a80d2e.mp3?filename=error-126627.mp3"></audio>
     
     <script src="script.js"></script>
 </body>
