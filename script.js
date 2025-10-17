@@ -194,13 +194,14 @@ function endGame() {
   gameOverMsg.className = "game-over";
   gameOverMsg.textContent = `💧 Game Over! Your Score: ${score}`;
   document.body.appendChild(gameOverMsg);
+  alert("💧 Game Over! Your score: " + score);
   setTimeout(() => {
     conf.remove();
     gameOverMsg.remove();
-  }, 3000);
+  }, 2500);
 }
 
-showGameOver(score);
+
 
 
 // --- Sound (WebAudio)
@@ -258,7 +259,5 @@ function checkMilestones() {
 
     // Remove after animation
     setTimeout(() => milestone.remove(), 3000);
-
-
   }
 }
