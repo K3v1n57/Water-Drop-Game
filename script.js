@@ -259,5 +259,8 @@ function checkMilestones() {
 
     // Remove after animation
     setTimeout(() => milestone.remove(), 3000);
+
+  alert("💧 Game Over! Your score: " + score);
+
   }
 }
