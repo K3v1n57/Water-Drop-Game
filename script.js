@@ -194,7 +194,6 @@ function endGame() {
   gameOverMsg.className = "game-over";
   gameOverMsg.textContent = `💧 Game Over! Your Score: ${score}`;
   document.body.appendChild(gameOverMsg);
-  alert("💧 Game Over! Your score: " + score);
   setTimeout(() => {
     conf.remove();
     gameOverMsg.remove();
