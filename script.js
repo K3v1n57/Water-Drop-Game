@@ -21,19 +21,19 @@ function applyDifficultySettings() {
   const diff = difficultySelect ? difficultySelect.value : "medium";
   if (diff === "easy") {
     dropSpeed = 3;
-    dropIntervalTime = 1200;
+    dropIntervalTime = 900;
     timeLeft = 60;
   } else if (diff === "medium") {
     dropSpeed = 5;
-    dropIntervalTime = 900;
+    dropIntervalTime = 600;
     timeLeft = 60;
   } else if (diff === "hard") {
     dropSpeed = 8;
-    dropIntervalTime = 500;
+    dropIntervalTime = 300;
     timeLeft = 60;
   } else if (diff === "impossible") {
     dropSpeed = 10;
-    dropIntervalTime = 200;
+    dropIntervalTime = 100;
     timeLeft = 60;
   }
 }
@@ -259,5 +259,7 @@ function checkMilestones() {
 
     // Remove after animation
     setTimeout(() => milestone.remove(), 3000);
+
+
   }
 }
